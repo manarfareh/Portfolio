@@ -1,15 +1,19 @@
 import { Projectcard } from "../components";
 import {Reveal} from '../utils'
-import {hotel,flight,videos,meuble_creatice,home_creatice,about,school_Management,stage_video_final,Enicar_Library_Demo,Evaluation,Evaluation_with_MobileNet,Loss_History,Traffic,Weather_Data,Road_Closure,Accident,} from '../assets'
+import {hotel,flight,videos,meuble_creatice,home_creatice,about,school_Management,stage_video_final,Enicar_Library_Demo,Evaluation,Evaluation_with_MobileNet,Loss_History,Traffic,Weather_Data,Road_Closure,Accident,talan_demo} from '../assets'
 
 const Projects = () => {
   return (
-    <section className=" mx-auto mt-24 justify-center"  id="projects" style={{ width: '1200px', marginLeft: '140px', borderRadius: '10px' }}>
+<section
+  id="projects"
+  className="max-w-7xl mx-auto mt-1 px-6"
+>
+
       <Reveal>
         <p className='text-2xl md:text-5xl xl:text-6xl font-extrabold text-white py-2'>Projects<span className='text-main1'>.</span></p>
       </Reveal>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-10'>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
         {projects.map((project) => {
           return <Projectcard key={project.title} {...project} />;
         })}
@@ -19,6 +23,49 @@ const Projects = () => {
 };
 
 const projects = [
+  {
+    title: "HR platform to optimize the performance of Talan's human capital",
+    imgSrc: [talan_demo],
+    code: "",
+    tech: [
+      {
+        name: "Apex",
+        color: "text-main1",
+      },
+      {
+        name: "SOQL",
+        color: "text-main1",
+      },
+      {
+        name: "FastAPI",
+        color: "text-main1",
+      },
+      {
+        name: "JavaScript ",
+        color: "text-main1",
+      },
+      {
+        name: "Python ",
+        color: "text-main1",
+      },
+      
+      {
+        name: "AWS Services",
+        color: "text-main1",
+      },
+    ],      
+    description:"Optimized recruitment workflows and candidate experience by automating key processes through Salesforce CRM integration and AI solutions.",
+    modalContent: (
+      <>
+        <p>
+        Handled the management of job posting, application processing, and interview scheduling, technical tests, feedback, and reporting dashboards for HR and recruiters.</p>
+        <p>
+        Integrated an AI model to evaluate the similarity between candidate resumes and job postings providing relevance scores and notifications for candidates about new matching job offers.
+        </p>
+      </>
+    ),
+    deg : "2deg",
+  },
   
   {
     title: "Management of a Medical Practice (Pixemantic Internship)",

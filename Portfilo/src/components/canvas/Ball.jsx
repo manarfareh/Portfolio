@@ -52,5 +52,3 @@ const BallCanvas = ({ icon }) => {
 };
 
 export default BallCanvas;
-
-// rotateSpeed={1.5} autoRotate autoRotateSpeed={5} 

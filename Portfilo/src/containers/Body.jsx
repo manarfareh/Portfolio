@@ -1,5 +1,5 @@
 import React from 'react'
-import {Aboutjson, Hero,Activity} from '../components'
+import { Hero,Activity} from '../components'
 import {Skills, Contact, Projects} from '../containers'
 
 const Body = ({mainColor, setMainColor}) => {
@@ -9,9 +9,6 @@ const Body = ({mainColor, setMainColor}) => {
       <Hero 
         mainColor={mainColor}
         setMainColor={setMainColor}
-      />
-      <Aboutjson
-        mainColor={mainColor}
       />
       <Skills 
         mainColor={mainColor}

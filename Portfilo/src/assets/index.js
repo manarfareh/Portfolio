@@ -37,9 +37,18 @@ import shesolves from './shesolves.jpg'
 import wintercup from './wintercup.jpg'
 import leetcode from './leetcode.png'
 import codeforces from './codeforces.png'
-
+import talan_demo from './projectpics/talan_demo.mp4'
 import menu from './menu.svg'
 import close from './close.svg'
+import docker from "./tech/docker.png";
+import nodejs from "./tech/nodejs.png";
+import nextjs from "./tech/nextjs.png";
+import tailwind from "./tech/tailwind.png";
+import materialui from "./tech/materialui.png";
+import jenkins from "./tech/jenkins.png";
+import githubactions from "./tech/github.png";
+import jira from "./tech/jira.png";
+import gitlab from "./tech/gitlab.png";
 
 export {
   leetcode,
@@ -81,7 +90,16 @@ export {
   meuble_creatice,
   home_creatice,
   about,
-  
+  docker,
+  nodejs,
+  nextjs,
+  tailwind,
+  materialui,
+  jenkins,
+  githubactions,
+  jira,
+  gitlab,
+  talan_demo,
     menu,
     close
   };

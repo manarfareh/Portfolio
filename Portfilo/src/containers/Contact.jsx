@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="contact-details-box">
                 <h2>Manar Fareh</h2>
                 <p className="details">
-                  <i className="fa fa-phone"></i> +216 53586647
+                  <i className="fa fa-phone"></i> +1 438 454 2272
                 </p>
                 <div className="max-w-4xl mx-auto text-white font-light">
                   <motion.div

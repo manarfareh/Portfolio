@@ -66,9 +66,16 @@ const Projectmodal = ({
 
           <div className='mb-5 sm:mb-2'>
             <div className='flex items-center gap-5'>
-              <a target="_blank" rel="nofollow" href={code} className="flex gap-2 text-main1 items-center">
-                <AiFillGithub size='2rem' /> source code
-              </a>
+            {code && (
+                <a
+                  target="_blank"
+                  rel="nofollow"
+                  href={code}
+                  className="flex gap-2 text-main1 items-center"
+                >
+                  <AiFillGithub size="2rem" /> source code
+                </a>
+              )}
               {projectLink ? 
               <a target="_blank" rel="nofollow" href={projectLink} className="flex text-main1 gap-2 items-center">
                 <AiOutlineExport size='2rem'/> live project
